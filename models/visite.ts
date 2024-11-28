@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export interface IVisite extends Document {
-    id: number;
+    // id: number;
     dateVisite: Date;
     commentaire: string;
     visiteur: Schema.Types.ObjectId;
@@ -10,7 +10,7 @@ export interface IVisite extends Document {
 }
 
 const visiteSchema: Schema = new Schema({
-    id: { type: Number, required: true },
+    // id: { type: Number, required: true },
     dateVisite: { type: Date, required: true },
     commentaire: { type: String, required: true },
     visiteur : { type: Schema.Types.ObjectId, ref: 'Visiteur', required: true },

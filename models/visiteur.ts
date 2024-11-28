@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export interface IVisiteur extends Document {
-  id : number;
+  // id : number;
   nom: string;
   prenom : string;
   tel : string;
@@ -11,7 +11,7 @@ export interface IVisiteur extends Document {
 }
 
 const visiteurSchema: Schema = new Schema({
-  id : { type: Number, required: true },
+  // id : { type: Number, required: true },
   nom: { type: String, required: true },
   prenom : { type: String, required: true },
   tel : { type: String, required: true },
