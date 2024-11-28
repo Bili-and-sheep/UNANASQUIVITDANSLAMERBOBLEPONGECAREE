@@ -17,13 +17,13 @@ app.use('/api/praticiens', praticienRoutes);
 app.use('/api/motifs', motifRoutes);
 
 // MongoDB Connection
-// mongoose.connect('mongodb://localhost:27017/visiteurs', {)
-//   .then(() => {
-//     console.log('MongoDB connected');
-//   })
-//   .catch(err => {
-//     console.error('MongoDB connection error:', err);
-//   });
+mongoose.connect('mongodb+srv://eliottandre:m2NJI3SRm0m6WZBN@gsbapi.a6kb7.mongodb.net/?retryWrites=true&w=majority&appName=gsbAPI')
+  .then(() => {
+    console.log('MongoDB connected');
+  })
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+  });
 
 export default app;
 
